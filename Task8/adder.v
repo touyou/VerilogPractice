@@ -164,7 +164,7 @@ module adder(
         end
       end
 
-g      add_0:
+      add_0:
       begin
         z_e <= a_e;
         if (a_s == b_s) begin
