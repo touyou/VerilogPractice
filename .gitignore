@@ -1,0 +1,8 @@
+*.log
+*.wdb
+*.vcd
+*.pb
+*.jou
+/Divider/
+/Divider2/
+/xsim.dir/

@@ -1,0 +1,1 @@
+-debug "typical" "test_bsort" -s "bsort.sim" 

@@ -1,0 +1,1 @@
+-debug "typical" "test_divider" -s "test_divider.sim" 

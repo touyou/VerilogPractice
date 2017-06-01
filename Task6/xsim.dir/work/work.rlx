@@ -1,0 +1,7 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/tansei/Desktop/hardware_kadai/verilog/Task6/dividerp2.sv,1495696800,systemVerilog,,,,div1;div16;div2;div32p2;div4;div8,,,,,,,,
+/home/tansei/Desktop/hardware_kadai/verilog/Task6/test_divider.sv,1494853617,systemVerilog,,/home/tansei/Desktop/hardware_kadai/verilog/Task6/divider.sv,,test_divider,,,,,,,,
+/home/tansei/Desktop/hardware_kadai/verilog/Task6/test_divider_p2.sv,1495689245,systemVerilog,,/home/tansei/Desktop/hardware_kadai/verilog/Task6/dividerp2.sv,,test_divider_p2,,,,,,,,
