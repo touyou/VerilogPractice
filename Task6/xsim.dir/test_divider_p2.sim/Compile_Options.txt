@@ -1,1 +1,0 @@
--debug "typical" "test_divider_p2" -s "test_divider_p2.sim" 
