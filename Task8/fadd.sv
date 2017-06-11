@@ -10,23 +10,25 @@ module fadd
     wire s1, s2;
     wire [7:0] e1, e2;
     wire [22:0] m1, m2;
-    assign s1 = x1[30:23] > x2[30:23] ? x1[31:31] : x2[31:31];
-    assign e1 = x1[30:23] > x2[30:23] ? x1[30:23] : x2[30:23];
-    assign m1 = x1[30:23] > x2[30:23] ? x1[22:0] : x2[22:0];
-    assign s2 = x1[30:23] > x2[30:23] ? x2[31:31] : x1[31:31];
-    assign e2 = x1[30:23] > x2[30:23] ? x2[30:23] : x1[30:23];
-    assign m2 = x1[30:23] > x2[30:23] ? x2[22:0] : x1[22:0];
+    assign s1 = x1[31:31];
+    assign e1 = x1[30:23];
+    assign m1 = x1[22:0];
+    assign s2 = x2[31:31];
+    assign e2 = x2[30:23];
+    assign m2 = x2[22:0];
 
-    wire [31:0] temp;
-    subadder sa(.s1(s1), .e1(e1), .m1(m1), .s2(s2), .e2(e2), .m2(m2), .y(temp), .ovf(ovf));
-    // 例外処理
-    assign y = (e2 == 255 && m2 != 0) ? {s2 & s1, e2, 1'b1, m2[21:0]} :
-               (e1 == 255 && m1 != 0) ? {s1, e1, 1'b1, m1[21:0]} :
-               ((e1 == 255 && m1 == 0) && (e2 == 255 && m2 == 0) && s1 != s2) ? {1'b0, e1, 1'b1, 22'b0} :
-               ((e1 == 255 && m1 == 0) && (e2 == 255 && m2 == 0)) ? {s1, e1, m1} :
-               ((e1 == 0 && m1 == 0) && (e2 == 0 && m2 == 0)) ? {s1 & s2, e1, m1} :
-               (s1 != s2 && e1 == e2 && m1 == m2) ? 0 : temp ;
-
+    wire [31:0] sum;
+    // これが加算器
+    subadder sa(.s1(s1), .e1(e1), .m1(m1), .s2(s2), .e2(e2), .m2(m2), .y(sum), .ovf(ovf));
+    // Special Case
+    assign y = e1==255 &&  m1 != 0 ? {1'b0, e1, {1'b1, m1[21:0]}} : // left x is NaN
+        e2 == 255 && m2 != 0 ? {1'b0, e2, {1'b1, m2[21:0]}} :       // right x is NaN 
+        // Both inf and different sign
+        s1 != s2 && e1 == 255 && m1 == 0 && e2 == 255 && m2 ==-0 ? {1'b0, 8'b0, {1'b1, 22'b0}} :
+        e1 == 255 && m1 == 0 ? {s1, e1, m1} :                       // left x is inf
+        e2 == 255 && m2 == 0 ? {s2, e2, m2} :                       // right x is inf
+        e1 == 0 && m1 == 0 ? {s2, e2, m2} :                         // left x is 0
+        e2 == 0 && m2 == 0 ? {s1, e1, m1} : sum;                    // right x is 0
 endmodule
 
 module subadder
@@ -39,53 +41,66 @@ module subadder
     output wire [31:0] y,
     output wire ovf );
 
-    // e1 > e2
-    wire [26:0] mm1, mm2;
-    assign mm1 = {e1 == 0 ? 1'b0 : 1'b1, m1, 3'b0};
-    assign mm2 = {e2 == 0 ? 1'b0 : 1'b1, m2, 3'b0};
-    wire [7:0] me1, me2;
-    assign me1 = e1 == 0 ? 1 : e1;
-    assign me2 = e2 == 0 ? 1 : e2;
+    // 正規化数のほうにはケチ表現をつけてあげる
+    // lが大きい方、sが小さい方
+    wire ls, ss;
+    wire [8:0] diffe;
+    assign diffe = e1 - e2;
+    wire [7:0] le, stempe;
+    wire [26:0] lm, stempm;
+    assign ls = diffe[8] == 0 ? s1 : s2;
+    assign ss = diffe[8] == 1 ? s1 : s2;
+    assign le = diffe[8] == 0 ? (e1 == 0 ? 1 : e1) : (e2 == 0 ? 1 : e2);
+    assign stempe = diffe[8] == 1 ? (e1 == 0 ? 1 : e1) : (e2 == 0 ? 1 : e2);
+    assign lm = diffe[8] == 0 ? {e1==0?1'b0:1'b1, m1, 3'b0} : {e2==0?1'b0:1'b1, m2, 3'b0};
+    assign stempm = diffe[8] == 1 ? {e1==0?1'b0:1'b1, m1, 3'b0} : {e2==0?1'b0:1'b1, m2, 3'b0};
 
-    // shiftする。ただし切り捨て部分に0以外があれば最後を1にする
-    wire [26:0] nm2;
-    wire [4:0] sm2, en2;
-    prencoder pre(.a({4'b0, mm2}), .out(sm2), .en(en2));
-    assign nm2 = sm2 > me1-me2 || en2 == 0 ? mm2 >> (me1-me2) : mm2 >> (me1-me2) | 1;
+    // 小数点をそろえる。le-se分だけ小さい方を右シフト
+    // この時,sticky bitの扱いに注意する
+    // すべて含めてLSBの右からの位置がシフト量よりも多ければ
+    wire [8:0] sube;
+    wire [4:0] lsbp;
+    wire en1;
+    assign sube = le - se;
+    prencoder pe(.a({3'b0, stempm[26:0]}), .out(lsbp), .en(en1));
+    wire [26:0] sm;
+    wire [7:0] se;
+    assign se = le;
+    assign sm = (stempm >> sube) | (lsbp > sube ? 0 : 1);
 
-    // 足し算する
-    wire zs;
-    wire [26:0] ztemp1, ztemp2, ztemp4;
-    wire [23:0] ztemp3;
-    wire [9:0] zte, zse, zue, ze;
+    // 足し算
+    wire ys;
+    // 符号は違ったらmの大きい方に合わせる
+    wire ys = ls == ss ? ls :
+        lm >= sm ?  ls : ss;
+    // 合計は符号によって足し算になったり引き算になったり
+    // ここで負にはならないようにするから考えるのは桁上り分だけ
     wire [27:0] sum;
-    assign zs = s1 == s2 ? s1 :
-                mm1 >= nm2 ? s1 : s2;
-    assign sum = s1 == s2 ? mm1 + nm2 :
-                mm1 >= nm2 ? mm1 - nm2 : nm2 - mm1;
-    assign zte = sum[27] ? me1 + 1 : me1;
-    assign ztemp1 = sum[27] ? {sum[27:2], sum[1] | sum[0]} : sum[26:0];
-
-    // normalise_1
-    wire [4:0] sm, en;
-    pencoder pe(.a({4'b0, ztemp1}), .out(sm), .en(en));
-    // sm == 5 最上位が１、sm > 5
-    assign ztemp2 = sm-5 > zte-1 ? ztemp1 << (zte-5) : ztemp1 << (sm-5);
-    assign zse = sm-5 > zte-1 ? 1 : (sm<=5 ? zte : zte-(sm-5));
-
-    // normalise_2
-    wire [4:0] sm3, en3;
-    prencoder pre2(.a({4'b0, ztemp2}), .out(sm3), .en(en3));
-    assign ztemp4 = zse==0 || zse[9] == 1 ? ( sm3 > 0-zse+1 || en3 == 0 ? ztemp2 >> (0-zse+1) : ztemp2 >> (0-zse+1)) : ztemp2;
-    assign zue = zse==0 || zse[9] == 1 ? 1 : zse;
-
-    // round
-    assign ztemp3 = ztemp4[2] && (ztemp4[3]|ztemp4[1]|ztemp4[0]) ? ztemp4[26:3]+1 : ztemp4[26:3];
-    assign ze = ztemp4[2] && (ztemp4[3]|ztemp4[1]|ztemp4[0]) && ztemp3==24'hffffff ? zse+1 : zse;
-
-    // pack
-    assign y = ze==1&&ztemp3[23]==0 ? {zs,8'b0,ztemp3[22:0]} :
-        ze==255 ? {zs,8'b11111111,23'b0} : {zs, ze, ztemp3[22:0]};
+    assign sum = ls == ss ? lm + sm :
+        lm >= sm ? lm - sm : sm - lm;
+    // sum[27]が1のときはそこがケチ表現、それ以外はsum[26]がケチ表現になるので
+    // その状態を保存
+    wire [26:0] zm;
+    assign zm = sum[27] ? {sum[27:4], sum[3], sum[2], sum[1] | sum[0]} : sum[26:0];
+    // 正規化
+    // zeの最小限は1になるまで
+    wire en2, en3;
+    wire [8:0] msbp, lsbp2;
+    pencoder pc(.a({4'b0, zm}), .out(msbp), .en(en2));
+    prencoder prc(.a({4'b0, zm}), .out(lsbp2), .en(en3));
+    wire [8:0] ze;
+    wire [26:0] shiftedm;
+    assign ze = le <= msbp-4 ? le - msbp + 4 : 1;
+    assign shiftedm = le <= msbp-4 ? 
+        zm >> (le-msbp+4) | (lsbp2 > (le-msbp+4) ? 0 : 1) :
+        zm >> (le-1) | (lsbp2 > (le-1) ? 0 : 1);
+    // shiftedmは正規化できているはずだから最後に丸める。
+    wire [23:0] ym;
+    wire [8:0] ye;
+    assign ym = shiftedm[2] && (shiftedm[3] | shiftedm[1] | shiftedm[0]) ?
+        shiftedm[25:3] + 1 : shiftedm[25:3];
+    assign ye = ym == 24'hffffff ? ze + 1 : ze;
+    assign y = ye>255 ? {ys, 8'bff, 23'b0} : {ys, (ye==1&&ym[23]==0 ? 8'b0 : ye), ym[22:0]};
 endmodule
 
 module pencoder
