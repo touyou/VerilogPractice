@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:/home/tansei/Desktop/hardware_kadai/vivado/Arty_Master.xdc rfile:../../../../../../vivado/Arty_Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H5    IOSTANDARD LVCMOS33 } [get_ports { led[0] }]; #IO_L24N_T3_35 Sch=led[4]
+set_property src_info {type:XDC file:1 line:36 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN J5    IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; #IO_25_35 Sch=led[5]

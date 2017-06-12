@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 12 17:45:35 2017
+# Process ID: 21664
+# Current directory: /home/tansei/Desktop/hardware_kadai/verilog/Task8/test/test.runs/design_1_c_shift_ram_2_0_synth_1
+# Command line: vivado -log design_1_c_shift_ram_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_c_shift_ram_2_0.tcl
+# Log file: /home/tansei/Desktop/hardware_kadai/verilog/Task8/test/test.runs/design_1_c_shift_ram_2_0_synth_1/design_1_c_shift_ram_2_0.vds
+# Journal file: /home/tansei/Desktop/hardware_kadai/verilog/Task8/test/test.runs/design_1_c_shift_ram_2_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_c_shift_ram_2_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1066.457 ; gain = 131.086 ; free physical = 8210 ; free virtual = 28719
+INFO: [Synth 8-638] synthesizing module 'design_1_c_shift_ram_2_0' [/home/tansei/Desktop/hardware_kadai/verilog/Task8/test/test.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_2_0/synth/design_1_c_shift_ram_2_0.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_shift_ram_2_0' (4#1) [/home/tansei/Desktop/hardware_kadai/verilog/Task8/test/test.srcs/sources_1/bd/design_1/ip/design_1_c_shift_ram_2_0/synth/design_1_c_shift_ram_2_0.vhd:67]
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1110.930 ; gain = 175.559 ; free physical = 8078 ; free virtual = 28587
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1110.930 ; gain = 175.559 ; free physical = 8078 ; free virtual = 28587
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1386.934 ; gain = 1.004 ; free physical = 7846 ; free virtual = 28354
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 7845 ; free virtual = 28354
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 7845 ; free virtual = 28354
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 7845 ; free virtual = 28354
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 7869 ; free virtual = 28377
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 7869 ; free virtual = 28377
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 8293 ; free virtual = 28805
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1386.934 ; gain = 451.562 ; free physical = 8293 ; free virtual = 28804
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.938 ; gain = 452.566 ; free physical = 8293 ; free virtual = 28804
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8289 ; free virtual = 28800
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8289 ; free virtual = 28800
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8289 ; free virtual = 28800
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8289 ; free virtual = 28800
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8267 ; free virtual = 28778
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8267 ; free virtual = 28778
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |SRL16E |     1|
+|2     |FDRE   |     2|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.941 ; gain = 452.570 ; free physical = 8267 ; free virtual = 28778
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1395.941 ; gain = 393.066 ; free physical = 8258 ; free virtual = 28769
