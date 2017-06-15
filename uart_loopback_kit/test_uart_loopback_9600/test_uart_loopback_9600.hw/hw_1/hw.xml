@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a35t_0" gui_info="dashboard1=hw_ila_1[xc7a35t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a35t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a35t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a35t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7a35t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/design_1_wrapper.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="hw_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_MODE" value="BASIC"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="design_1_i/uart_loopback_0/inst/data[7:0]" gui_info="Trigger Setup=0,Capture Setup=0"/>
+    <Object name="design_1_i/uart_loopback_0/inst/rdata[7:0]" gui_info="Trigger Setup=1,Capture Setup=1"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u1/counter[31:0]" gui_info=""/>
+    <Object name="design_1_i/uart_loopback_0/inst/u1/status[3:0]" gui_info=""/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/counter_reg[31:0]" gui_info="Trigger Setup=0,Capture Setup=1"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/next" gui_info="Capture Setup=0,Trigger Setup=1"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/rst_ctr" gui_info="Trigger Setup=0"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/rxbuf[7:0]" gui_info="Trigger Setup=2,Capture Setup=2"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/rxd" gui_info="Trigger Setup=3,Capture Setup=3"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/status" gui_info="Trigger Setup=4,Capture Setup=4"/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/status[4:0]" gui_info=""/>
+    <Object name="design_1_i/uart_loopback_0/inst/u2/watch" gui_info="Trigger Setup=5,Capture Setup=5"/>
+    <Object name="design_1_i/uart_loopback_0/rxd" gui_info="Trigger Setup=2,Capture Setup=2"/>
+    <Object name="design_1_i/uart_loopback_0/txd" gui_info="Trigger Setup=3,Capture Setup=3"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/data[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/rdata[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[31]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[30]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[29]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[28]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[27]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[26]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[25]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[24]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[23]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[22]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[21]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[20]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[19]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[18]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[17]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[16]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[15]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[14]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[13]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[12]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[11]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[10]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[9]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[8]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u1/status[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/status[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/status[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/status[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u1/txbuf[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[31]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[30]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[29]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[28]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[27]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[26]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[25]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[24]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[23]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[22]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[21]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[20]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[19]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[18]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[17]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[16]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[15]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[14]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[13]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[12]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[11]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[10]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[9]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[8]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[31]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[30]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[29]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[28]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[27]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[26]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[25]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[24]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[23]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[22]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[21]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[20]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[19]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[18]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[17]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[16]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[15]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[14]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[13]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[12]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[11]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[10]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[9]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[8]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/counter_reg[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;b1"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/next"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rst_ctr"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[8:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[8]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[7]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[6]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[5]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxbuf[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/rxd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/status"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe5[4:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq5&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/status[4]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/status[3]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/status[2]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/status[1]"/>
+        <net name="design_1_i/uart_loopback_0/inst/u2/status[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/inst/u2/watch"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/rxd"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/uart_loopback_0/txd"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
