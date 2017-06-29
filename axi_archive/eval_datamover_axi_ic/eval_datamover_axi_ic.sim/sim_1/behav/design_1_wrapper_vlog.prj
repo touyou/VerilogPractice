@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../../datamover_axi.sv" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../../datamover_axi_wrap.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/hdl/design_1.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_datamover_axi_wrap_0_0/sim/design_1_datamover_axi_wrap_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ipshared/e147/xlconstant.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ipshared/68f7/hdl/sim_clk_gen.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_sim_clk_gen_0_0/sim/design_1_sim_clk_gen_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_axi_protocol_checker_0_0/sim/design_1_axi_protocol_checker_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ipshared/c49f/xlslice.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ipshared/2e37/xlconcat.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_1_bram_0/sim/design_1_axi_bram_ctrl_1_bram_0.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+verilog xil_defaultlib  "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" --include "../../../eval_datamover_axi_ic.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

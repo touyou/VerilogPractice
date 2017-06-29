@@ -1,0 +1,79 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port btn1 -pg 1 -y 140 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 490 -defaultsOSRD
+preplace port btn0 -pg 1 -y 120 -defaultsOSRD
+preplace port reset -pg 1 -y 420 -defaultsOSRD
+preplace portBus ledcyc -pg 1 -y 530 -defaultsOSRD
+preplace portBus sw -pg 1 -y 340 -defaultsOSRD
+preplace portBus btn23 -pg 1 -y 320 -defaultsOSRD
+preplace portBus ledtrig -pg 1 -y 610 -defaultsOSRD
+preplace portBus led -pg 1 -y 390 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 9 -y 40 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 10 -y 530 -defaultsOSRD
+preplace inst pulse_btn_0 -pg 1 -lvl 3 -y 150 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -y 490 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 8 -y 380 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst datamover_axi_wrap_0 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 10 -y 610 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -y 440 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 9 -y 430 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 8 -y 480 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 5 -y 270 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 9 -y 220 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 7 -y 260 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 440 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 9 -y 300 -defaultsOSRD
+preplace inst util_reduced_logic_0 -pg 1 -lvl 9 -y 610 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 10 -y 170 -defaultsOSRD
+preplace inst util_reduced_logic_1 -pg 1 -lvl 6 -y 270 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 480 -defaultsOSRD
+preplace inst byte_mux_0 -pg 1 -lvl 10 -y 390 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y 100 -defaultsOSRD
+preplace netloc util_reduced_logic_1_Res 1 6 4 1530 170 NJ 170 NJ 170 2120J
+preplace netloc btn1_1 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc xlconstant_5_dout 1 9 1 NJ
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 5 4 NJ 60 NJ 60 NJ 60 1900J
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 5 5 NJ 80 NJ 80 NJ 80 1900J 90 2130
+preplace netloc xlconstant_1_dout 1 4 1 960J
+preplace netloc xlslice_1_Dout 1 10 1 NJ
+preplace netloc blk_mem_gen_1_douta 1 5 5 NJ 120 NJ 120 NJ 120 NJ 120 N
+preplace netloc clk_wiz_0_locked 1 2 3 510 480 690 110 1020J
+preplace netloc blk_mem_gen_1_doutb 1 9 1 2150
+preplace netloc byte_mux_0_data_out 1 10 1 NJ
+preplace netloc pulse_btn_0_statn 1 3 2 700J 130 1020
+preplace netloc util_vector_logic_0_Res 1 10 1 NJ
+preplace netloc xlconcat_1_dout 1 5 1 NJ
+preplace netloc clk_wiz_0_locked1 1 1 1 180
+preplace netloc pulse_btn_0_pulse 1 3 1 710
+preplace netloc sys_clock_1 1 0 1 NJ
+preplace netloc datamover_axi_wrap_0_axi 1 4 1 990
+preplace netloc datamover_axi_wrap_0_data_rdy 1 4 1 1000
+preplace netloc xlconcat_0_dout 1 9 1 2140
+preplace netloc c_counter_binary_0_Q 1 8 1 1900
+preplace netloc xlconstant_0_dout 1 4 1 NJ
+preplace netloc btn23_1 1 0 10 NJ 320 NJ 320 NJ 320 NJ 320 980J 330 NJ 330 NJ 330 NJ 330 1900J 350 2120J
+preplace netloc util_reduced_logic_0_Res 1 9 1 NJ
+preplace netloc btn0_1 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 5 5 NJ 100 NJ 100 NJ 100 NJ 100 N
+preplace netloc clk_wiz_0_clk_out1 1 1 9 180 230 500 230 700 290 1010 210 NJ 210 1520 140 NJ 140 NJ 140 2130J
+preplace netloc xlconstant_4_dout 1 9 1 2110J
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 5 5 NJ 160 NJ 160 NJ 160 NJ 160 N
+preplace netloc blk_mem_gen_0_douta 1 3 2 720 330 970
+preplace netloc sw_1 1 0 9 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 1710J 430 NJ
+preplace netloc reset_1 1 0 2 20 420 NJ
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 5 5 1320J 130 NJ 130 NJ 130 NJ 130 2140
+preplace netloc xlconstant_3_dout 1 8 1 1910J
+preplace netloc c_counter_binary_0_Q1 1 7 3 1720 530 NJ 530 NJ
+preplace netloc xlslice_0_Dout 1 9 1 2130
+preplace netloc datamover_axi_wrap_0_iaddr 1 4 1 990
+levelinfo -pg 1 0 100 340 600 840 1170 1420 1620 1810 2010 2280 2430 -top 0 -bot 660
+",
+}
+{
+   da_axi4_cnt: "1",
+   da_board_cnt: "3",
+   da_bram_cntlr_cnt: "3",
+}

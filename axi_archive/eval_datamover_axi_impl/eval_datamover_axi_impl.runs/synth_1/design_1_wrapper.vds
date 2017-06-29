@@ -1,0 +1,581 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 26 17:00:24 2017
+# Process ID: 21000
+# Current directory: /home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/yosimoto/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-2228] Inferred bus interface 'axi' of definition 'xilinx.com:interface:aximm:1.0'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rstn' as interface 'rstn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_0_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_0_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_0_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_0_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_0_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_1_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_1_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_1_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_1_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_xlconstant_1_0' generated file not found '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rstn' as interface 'rstn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Command: synth_design -top design_1_wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21004 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.520 ; gain = 146.086 ; free physical = 2416 ; free virtual = 20435
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/synth/design_1_axi_bram_ctrl_0_0.vhd:92]
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23727' bound to instance 'U0' of component 'axi_bram_ctrl' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/synth/design_1_axi_bram_ctrl_0_0.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23897]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22901]
+INFO: [Synth 8-638] synthesizing module 'axi_lite' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:7102]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite' (1#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:7102]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (2#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22901]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (3#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23897]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (4#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/synth/design_1_axi_bram_ctrl_0_0.vhd:92]
+WARNING: [Synth 8-350] instance 'axi_bram_ctrl_0' of module 'design_1_axi_bram_ctrl_0_0' requires 28 connections, but only 27 given [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/hdl/design_1.v:98]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/6273/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_0' (13#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_1_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/synth/design_1_blk_mem_gen_1_0.vhd:76]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/6273/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/synth/design_1_blk_mem_gen_1_0.vhd:244]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_1_0' (14#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/synth/design_1_blk_mem_gen_1_0.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'design_1_byte_mux_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_byte_mux_0_0/synth/design_1_byte_mux_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'byte_mux' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/byte_mux.v:3]
+INFO: [Synth 8-256] done synthesizing module 'byte_mux' (15#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/byte_mux.v:3]
+INFO: [Synth 8-256] done synthesizing module 'design_1_byte_mux_0_0' (16#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_byte_mux_0_0/synth/design_1_byte_mux_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_10' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/d6cf/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2130' bound to instance 'U0' of component 'c_counter_binary_v12_0_10' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'design_1_c_counter_binary_0_0' (24#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14146]
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (25#1) [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14146]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (26#1) [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (27#1) [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (28#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0' (29#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_datamover_axi_wrap_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_datamover_axi_wrap_0_0/synth/design_1_datamover_axi_wrap_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'datamover_axi_wrap' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/datamover_axi_wrap.v:3]
+INFO: [Synth 8-638] synthesizing module 'datamover_axi' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/datamover_axi.sv:3]
+WARNING: [Synth 8-3848] Net axi_rready in module/entity datamover_axi does not have driver. [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/datamover_axi.sv:32]
+INFO: [Synth 8-256] done synthesizing module 'datamover_axi' (30#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/datamover_axi.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'datamover_axi_wrap' (31#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/datamover_axi_wrap.v:3]
+INFO: [Synth 8-256] done synthesizing module 'design_1_datamover_axi_wrap_0_0' (32#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_datamover_axi_wrap_0_0/synth/design_1_datamover_axi_wrap_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/synth/design_1_proc_sys_reset_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/synth/design_1_proc_sys_reset_0_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (33#1) [/home/yosimoto/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (34#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (35#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (36#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (37#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (38#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_proc_sys_reset_0_0' (39#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/synth/design_1_proc_sys_reset_0_0.vhd:71]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' requires 10 connections, but only 6 given [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/hdl/design_1.v:184]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_btn_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_pulse_btn_0_0/synth/design_1_pulse_btn_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'pulse_btn' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/pulse_btn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'pulse_btn' (40#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/pulse_btn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'design_1_pulse_btn_0_0' (41#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_pulse_btn_0_0/synth/design_1_pulse_btn_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_reduced_logic_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/synth/design_1_util_reduced_logic_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'util_reduced_logic' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1320/hdl/util_reduced_logic.vhd:76' bound to instance 'U0' of component 'util_reduced_logic' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/synth/design_1_util_reduced_logic_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'util_reduced_logic' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1320/hdl/util_reduced_logic.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'util_reduced_logic' (42#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1320/hdl/util_reduced_logic.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_reduced_logic_0_0' (43#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_0_0/synth/design_1_util_reduced_logic_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_reduced_logic_1_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_1_0/synth/design_1_util_reduced_logic_1_0.vhd:66]
+INFO: [Synth 8-3491] module 'util_reduced_logic' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1320/hdl/util_reduced_logic.vhd:76' bound to instance 'U0' of component 'util_reduced_logic' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_1_0/synth/design_1_util_reduced_logic_1_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'util_reduced_logic__parameterized1' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1320/hdl/util_reduced_logic.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'util_reduced_logic__parameterized1' (43#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1320/hdl/util_reduced_logic.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_reduced_logic_1_0' (44#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_reduced_logic_1_0/synth/design_1_util_reduced_logic_1_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1d19/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'util_vector_logic' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1d19/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'util_vector_logic' (45#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/1d19/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_vector_logic_0_0' (46#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (47#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (48#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_1_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_1_0/synth/design_1_xlconcat_1_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized0' (48#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_1_0' (49#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_1_0/synth/design_1_xlconcat_1_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (50#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (51#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_1_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized0' (51#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_1_0' (52#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_3_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized1' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized1' (52#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_3_0' (53#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_3_0/sim/design_1_xlconstant_3_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_4_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized2' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized2' (53#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_4_0' (54#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_4_0/sim/design_1_xlconstant_4_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_5_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized3' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized3' (54#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_5_0' (55#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_5_0/sim/design_1_xlconstant_5_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_0_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/c49f/xlslice.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (56#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/c49f/xlslice.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_0_0' (57#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_1_1' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_1/synth/design_1_xlslice_1_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/c49f/xlslice.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized0' (57#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/c49f/xlslice.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_1_1' (58#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_1/synth/design_1_xlslice_1_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlslice_2_0' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized1' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/c49f/xlslice.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized1' (58#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/c49f/xlslice.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlslice_2_0' (59#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (60#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (61#1) [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized0 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat__parameterized0 has unconnected port In31[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat has unconnected port In23[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:32 ; elapsed = 00:01:32 . Memory (MB): peak = 1291.664 ; gain = 367.230 ; free physical = 2278 ; free virtual = 20290
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:32 ; elapsed = 00:01:32 . Memory (MB): peak = 1291.664 ; gain = 367.230 ; free physical = 2278 ; free virtual = 20290
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 68 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/constrs_1/new/ioports.xdc]
+Finished Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/constrs_1/new/ioports.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/constrs_1/new/ioports.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1371.414 ; gain = 0.004 ; free physical = 2263 ; free virtual = 20274
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:41 ; elapsed = 00:02:01 . Memory (MB): peak = 1371.414 ; gain = 446.980 ; free physical = 2263 ; free virtual = 20275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:41 ; elapsed = 00:02:01 . Memory (MB): peak = 1371.414 ; gain = 446.980 ; free physical = 2263 ; free virtual = 20275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  /home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/dont_touch.xdc, line 84).
+Applied set_property DONT_TOUCH = true for design_1_i/proc_sys_reset_0/U0. (constraint file  /home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/dont_touch.xdc, line 92).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/byte_mux_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/datamover_axi_wrap_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/pulse_btn_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_reduced_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_reduced_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:02:01 . Memory (MB): peak = 1371.414 ; gain = 446.980 ; free physical = 2263 ; free virtual = 20275
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'GEN_R.axi_rlast_int_reg' into 'GEN_R.axi_rvalid_int_reg' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/91f5/hdl/axi_bram_ctrl_v4_0_rfs.vhd:7521]
+INFO: [Synth 8-802] inferred FSM for state register 'lite_sm_cs_reg' in module 'axi_lite'
+INFO: [Synth 8-5544] ROM "lite_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "lite_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 |                              000
+             sng_wr_data |                           000100 |                              001
+                 rd_data |                           000010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'lite_sm_cs_reg' using encoding 'one-hot' in module 'axi_lite'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:42 ; elapsed = 00:02:02 . Memory (MB): peak = 1371.414 ; gain = 446.980 ; free physical = 2259 ; free virtual = 20271
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'design_1_i/proc_sys_reset_0/U0/SEQ/pr_dec_reg[1]' (FD) to 'design_1_i/proc_sys_reset_0/U0/SEQ/bsr_dec_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/proc_sys_reset_0/U0/SEQ/bsr_dec_reg[1]' (FD) to 'design_1_i/proc_sys_reset_0/U0/SEQ/core_dec_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:02:02 . Memory (MB): peak = 1379.426 ; gain = 454.992 ; free physical = 2235 ; free virtual = 20246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:49 ; elapsed = 00:02:10 . Memory (MB): peak = 1383.418 ; gain = 458.984 ; free physical = 2227 ; free virtual = 20239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:02:10 . Memory (MB): peak = 1392.434 ; gain = 468.000 ; free physical = 2218 ; free virtual = 20230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.449 ; gain = 478.016 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |LUT1       |     9|
+|3     |LUT2       |    14|
+|4     |LUT3       |     3|
+|5     |LUT4       |    15|
+|6     |LUT5       |     7|
+|7     |LUT6       |    25|
+|8     |MMCME2_ADV |     1|
+|9     |MUXCY      |    25|
+|10    |RAMB18E1   |     1|
+|11    |RAMB36E1   |     1|
+|12    |SRL16      |     1|
+|13    |XORCY      |    26|
+|14    |FDR        |     8|
+|15    |FDRE       |    70|
+|16    |FDSE       |     5|
+|17    |IBUF       |    10|
+|18    |OBUF       |    10|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.453 ; gain = 478.020 ; free physical = 2209 ; free virtual = 20220
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 484 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:42 ; elapsed = 00:01:42 . Memory (MB): peak = 1402.453 ; gain = 318.184 ; free physical = 2209 ; free virtual = 20220
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1402.457 ; gain = 478.023 ; free physical = 2210 ; free virtual = 20221
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 7 instances
+  FDR => FDRE: 8 instances
+  SRL16 => SRL16E: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:08 . Memory (MB): peak = 1402.457 ; gain = 410.520 ; free physical = 2210 ; free virtual = 20222
+INFO: [Common 17-1381] The checkpoint '/home/yosimoto/u-tokyo/hardware-lab/axi_archive/eval_datamover_axi_impl/eval_datamover_axi_impl.runs/synth_1/design_1_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1408.465 ; gain = 0.000 ; free physical = 2209 ; free virtual = 20221
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 17:02:41 2017...
