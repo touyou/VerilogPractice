@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="impl_1" LaunchDir="/home/tansei/Desktop/hardware_kadai/verilog/uart_loopback_kit/test_uart_loopback_9600/test_uart_loopback_9600.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design"/>
-</Runs>
-

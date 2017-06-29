@@ -10,15 +10,13 @@ module uart_rx #(CLK_PER_HALF_BIT = 5208) (
 
     // dt
     localparam e_clk_bit = CLK_PER_HALF_BIT * 2 - 1;
-    // dt/16
-    localparam e_watch_clk_bit =- CLK_PER_HALF_BIT / 8 - 1;
     // dt/2
     localparam e_half_clk_bit = CLK_PER_HALF_BIT - 1;
 
     logic [7:0]                   rxbuf;
+    logic [2:0]                   watchcount;
     logic [3:0]                   status;
     logic [31:0]                  counter;
-    logic                         watch;
     logic                         next;
     logic                         fin_start_bit;
     logic                         rst_ctr;
@@ -42,7 +40,6 @@ module uart_rx #(CLK_PER_HALF_BIT = 5208) (
     always @(posedge clk) begin
         if (~rstn) begin
             counter <= 0;
-            watch <= 0;
             next <= 0;
             fin_start_bit <= 0;
         end else begin
@@ -50,11 +47,6 @@ module uart_rx #(CLK_PER_HALF_BIT = 5208) (
                 counter <= 0;
             end else begin
                 counter <= counter + 1;
-            end
-            if (~rst_ctr && counter % e_watch_clk_bit == 0) begin
-                watch <= 1;
-            end else begin
-                watch <= 0;
             end
             if (~rst_ctr && counter == e_clk_bit) begin
                 next <= 1;
@@ -76,15 +68,19 @@ module uart_rx #(CLK_PER_HALF_BIT = 5208) (
             rxbuf <= 8'b0;
             rst_ctr <= 0;
             ferr <= 1'b0;
+            watchcount <= 0;
         end else begin
             rst_ctr <= 0;
             rdata_ready <= 0;
 
             if (status == r_idle) begin
-                if (~xd && watch) begin
-                    // まずdt/2待つ
+                if (~xd && watchcount == 3) begin
                     status <= r_start_bit;
                     rst_ctr <= 1;
+                    watchcount <= 0;
+                end else if (~xd) begin
+                    // まずdt/2待つ
+                    watchcount <= watchcount + 1;
                 end
             end else if (status == r_start_bit) begin
                 if (fin_start_bit) begin

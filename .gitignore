@@ -11,6 +11,8 @@
 *.bit
 *.hwdef
 *.sysdef
-*tcl
+*.tcl
 **/test_uart_loopback_9600
 **/xsim.dir
+**/Divider
+**/Divider_p2
