@@ -26,35 +26,35 @@ preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -y 130 -defaultsOSRD
 preplace inst axi_bram_ctrl_1 -pg 1 -lvl 6 -y 380 -defaultsOSRD
 preplace inst axi_protocol_checker_0 -pg 1 -lvl 5 -y 470 -defaultsOSRD
 preplace netloc xlconstant_5_dout 1 7 1 NJ
-preplace netloc axi_bram_ctrl_0_bram_addr_a 1 6 1 1480J
-preplace netloc axi_bram_ctrl_0_bram_clk_a 1 6 2 NJ 110 1710
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 6 1 1510J
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 6 2 NJ 110 1740
 preplace netloc xlconstant_1_dout 1 6 1 NJ
 preplace netloc c_shift_ram_1_Q 1 3 1 600
-preplace netloc blk_mem_gen_1_douta 1 6 2 NJ 150 1750
+preplace netloc blk_mem_gen_1_douta 1 6 2 NJ 150 1780
 preplace netloc xlslice_1_Dout 1 8 1 NJ
 preplace netloc xlconstant_2_dout 1 1 1 N
-preplace netloc clk_wiz_0_locked 1 1 5 NJ 500 NJ 500 600 560 910 400 1180
-preplace netloc blk_mem_gen_1_doutb 1 7 1 1760
-preplace netloc datamover_axi_wrap_0_axi 1 4 1 900
-preplace netloc datamover_axi_wrap_0_data_rdy 1 4 4 870 10 1170 10 NJ 10 1730
-preplace netloc xlconcat_0_dout 1 7 1 1750
-preplace netloc c_counter_binary_0_Q 1 6 2 1480 600 NJ
-preplace netloc xlconstant_0_dout 1 6 1 1490J
+preplace netloc clk_wiz_0_locked 1 1 5 NJ 500 NJ 500 600 560 900 400 1210
+preplace netloc blk_mem_gen_1_doutb 1 7 1 1790
+preplace netloc datamover_axi_wrap_0_axi 1 4 1 890
+preplace netloc datamover_axi_wrap_0_data_rdy 1 4 4 860 10 1200 10 NJ 10 1760
+preplace netloc xlconcat_0_dout 1 7 1 1780
+preplace netloc c_counter_binary_0_Q 1 6 2 1510 600 NJ
+preplace netloc xlconstant_0_dout 1 6 1 1520J
 preplace netloc util_reduced_logic_0_Res 1 8 1 NJ
-preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 6 2 NJ 130 1720
-preplace netloc clk_wiz_0_clk_out1 1 1 7 200 20 400 20 610 20 890 20 1160 20 1500 170 1740J
-preplace netloc axi_interconnect_0_M00_AXI 1 5 1 1150
-preplace netloc xlconstant_4_dout 1 7 1 1710J
-preplace netloc axi_bram_ctrl_0_bram_we_a 1 6 2 1490J 160 N
-preplace netloc blk_mem_gen_0_douta 1 3 4 620 660 NJ 660 NJ 660 1480J
-preplace netloc axi_interconnect_0_M01_AXI 1 5 1 1150
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 6 2 NJ 130 1750
+preplace netloc clk_wiz_0_clk_out1 1 1 7 200 20 400 20 610 20 880 20 1190 20 1530 170 1770J
+preplace netloc axi_interconnect_0_M00_AXI 1 5 1 1180
+preplace netloc xlconstant_4_dout 1 7 1 1740J
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 6 2 1520J 160 N
+preplace netloc blk_mem_gen_0_douta 1 3 4 620 660 NJ 660 NJ 660 1510J
+preplace netloc axi_interconnect_0_M01_AXI 1 5 1 1180
 preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 6 1 NJ
-preplace netloc axi_bram_ctrl_0_bram_en_a 1 6 2 1480J 140 N
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 6 2 1510J 140 N
 preplace netloc c_shift_ram_0_Q 1 2 1 N
-preplace netloc xlconstant_3_dout 1 6 1 1510J
+preplace netloc xlconstant_3_dout 1 6 1 1540J
 preplace netloc xlslice_0_Dout 1 7 1 N
-preplace netloc datamover_axi_wrap_0_iaddr 1 4 3 880 540 1180J 460 1490J
-levelinfo -pg 1 0 100 300 500 750 1030 1330 1610 1860 1980 -top 0 -bot 860
+preplace netloc datamover_axi_wrap_0_iaddr 1 4 3 870 540 1210J 460 1520J
+levelinfo -pg 1 0 100 300 500 750 1040 1360 1640 1890 2010 -top 0 -bot 860
 ",
 }
 {

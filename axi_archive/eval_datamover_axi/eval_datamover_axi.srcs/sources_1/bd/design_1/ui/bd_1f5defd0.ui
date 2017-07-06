@@ -30,16 +30,16 @@ preplace netloc c_shift_ram_1_Q 1 3 1 610
 preplace netloc blk_mem_gen_1_douta 1 5 2 NJ 120 1450
 preplace netloc xlslice_1_Dout 1 7 1 NJ
 preplace netloc xlconstant_2_dout 1 1 1 N
-preplace netloc clk_wiz_0_locked 1 1 4 NJ 290 NJ 290 600 340 890
+preplace netloc clk_wiz_0_locked 1 1 4 NJ 290 NJ 290 600 340 880
 preplace netloc blk_mem_gen_1_doutb 1 6 1 1470
-preplace netloc datamover_axi_wrap_0_axi 1 4 1 870
-preplace netloc datamover_axi_wrap_0_data_rdy 1 4 3 880 510 1210J 180 1440
+preplace netloc datamover_axi_wrap_0_axi 1 4 1 860
+preplace netloc datamover_axi_wrap_0_data_rdy 1 4 3 870 510 1210J 180 1440
 preplace netloc xlconcat_0_dout 1 6 1 1460
 preplace netloc c_counter_binary_0_Q 1 5 2 1200 670 NJ
 preplace netloc xlconstant_0_dout 1 5 1 1230J
 preplace netloc util_reduced_logic_0_Res 1 7 1 NJ
 preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 5 2 NJ 100 1450
-preplace netloc clk_wiz_0_clk_out1 1 1 6 200 270 400 270 610 350 900 520 1230 170 1450J
+preplace netloc clk_wiz_0_clk_out1 1 1 6 200 270 400 270 610 350 890 520 1230 170 1450J
 preplace netloc xlconstant_4_dout 1 6 1 1430J
 preplace netloc axi_bram_ctrl_0_bram_we_a 1 5 2 NJ 160 1460
 preplace netloc blk_mem_gen_0_douta 1 3 3 620 630 NJ 630 1220J
@@ -47,7 +47,7 @@ preplace netloc axi_bram_ctrl_0_bram_en_a 1 5 2 NJ 140 1450
 preplace netloc c_shift_ram_0_Q 1 2 1 N
 preplace netloc xlconstant_3_dout 1 5 1 1220J
 preplace netloc xlslice_0_Dout 1 6 1 1450
-preplace netloc datamover_axi_wrap_0_iaddr 1 4 2 870 530 1210J
+preplace netloc datamover_axi_wrap_0_iaddr 1 4 2 860 530 1210J
 levelinfo -pg 1 0 100 300 500 750 1050 1330 1570 1690 -top 0 -bot 730
 ",
 }

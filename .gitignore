@@ -16,3 +16,8 @@
 **/xsim.dir
 **/Divider
 **/Divider_p2
+*.xml
+*.html
+**/impl_1
+**/synth_1
+*.runs

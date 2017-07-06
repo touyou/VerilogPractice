@@ -1,5 +1,5 @@
 #!/bin/bash -f
-xv_path="/home/yosimoto/Xilinx/Vivado/2016.4"
+xv_path="/opt/Xilinx/Vivado/2016.4"
 ExecStep()
 {
 "$@"

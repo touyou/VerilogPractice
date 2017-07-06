@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Mon Jun 26 16:59:59 2017
-//Host        : hodaka running 64-bit Debian GNU/Linux 8.8 (jessie)
+//Date        : Thu Jul  6 16:03:47 2017
+//Host        : ispc2016 running 64-bit Ubuntu 14.04.5 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist

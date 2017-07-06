@@ -393,7 +393,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 26 07:59:01 UTC 2017</spirit:value>
+            <spirit:value>Thu Jul 06 07:01:33 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>

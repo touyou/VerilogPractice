@@ -44,56 +44,104 @@ module datamover_axi
    wire [AWIDTH-1:0]        op_b;
 
    // Operand: 0x0 copy ELSE end exec
-   assign opcode = inst[4+AWIDTH+AWIDTH-1:AWIDTH+AWIDTH];
+   assign opcode = instr[4+AWIDTH+AWIDTH-1:AWIDTH+AWIDTH];
    // Copy Source
-   assign op_a = inst[AWIDTH-1:0];
+   assign op_a = instr[AWIDTH-1:0];
    // Copy Destination
-   assign op_b = inst[AWIDTH+AWIDTH-1:AWIDTH];
+   assign op_b = instr[AWIDTH+AWIDTH-1:AWIDTH];
    assign iaddr = pc;
 
    localparam s_wait        = 7'b0000001;
-   localparam s_inst_fetch  = 7'b0000010;
-   localparam s_inst_decode = 7'b0000100;
-   localparam s_d_load_req  = 7'b0001000;
-   localparam s_d_load_acp  = 7'b0010000;
-   localparam s_d_store_req = 7'b0100000;
-   localparam s_d_store_acp = 7'b1000000;
-   // address write channel output axi_awvalid, input axi_awready, output  axi_awaddr, output axi_awprot,
-   // data write channel output axi_wvalid. input axi_wready, output axi_wdata, output axi_wstrb,
-   // response channel input axi_bvalid, output axi_bready, input axi_bresp,
-   // address read channel output axi_arvalid, input axi_arready, output axi_araddr, output axi_arprot,
-   // read data channel input axi_rvalid, output axi_rready, input axi_rdata, input axi_rresp,
+   localparam s_state_1     = 7'b0000010;
+   localparam s_state_2     = 7'b0000100;
+   localparam s_state_3     = 7'b0001000;
+   localparam s_state_4     = 7'b0010000;
+   localparam s_state_5     = 7'b0100000;
+   localparam s_state_6     = 7'b1000000;
 
-   // Ignore this program
+   // Ignore in this program
    assign axi_awprot = 0;
    assign axi_arprot = 0;
    assign axi_wstrb = 4'b1111;
+
+   // assign wire to reg
+   reg awvalid;
+   reg [31:0] awaddr;
+   reg wvalid;
+   reg bready;
+   reg arvalid;
+   assign axi_awvalid = awvalid;
+   assign axi_awaddr = awaddr;
+   assign axi_wvalid = wvalid;
+   assign axi_bready = bready;
+   assign axi_arvalid = arvalid;
 
    always @(posedge clk) begin
       if (~rstn) begin
         state <= s_wait;
         pc <= 0;
         data_rdy <= 0;
-        axi_awvalid <= 0;
-        axi_awaddr <= 0;
-
-        axi_wvalid <= 0;
-        axi_wdata <= 0;
-
-        axi_bready <= 0;
-        // Status
-        axi_bresp <= 0;
-
-        axi_arvalid <= 0;
-        axi_araddr <= 0;
-
-        axi_rready <= 0;
-        // Status
-        axi_rresp <= 0;
+        awvalid <= 0;   // write address VALID
+        awaddr <= 0;    // write address DATA
+        wvalid <= 0;    // write data VALID
+        axi_wdata <= 0;     // write data DATA
+        bready <= 0;    // write response READY
+        arvalid <= 0;   // read address VALID
+        axi_araddr <= 0;    // read address DATA
+        axi_rready <= 0;    // read data READY
       end else begin
         if (state == s_wait) begin
+            pc <= 0;
+            axi_araddr <= 0;
+            arvalid <= 0;
+            if (instr_val) begin
+                state <= s_state_1;
+            end
+        end else if (state == s_state_1) begin
+            state <= s_state_2;
+        end else if (state == s_state_2) begin
+            if (opcode == 4'b0000) begin
+                // start reading
+                axi_araddr <= {22'd0, op_a, 2'b00};
+                arvalid <= 1'b1;
+                state <= s_state_3;
+            end else begin
+                state <= s_wait;
+                data_rdy <= 1'b1;
+            end
+        end else if (state == s_state_3) begin
+            if (axi_arready) begin
+                arvalid <= 0;
+            end
+            if (axi_rvalid) begin
+                axi_rready <= 1'b1;
+                state <= s_state_4;
+            end
+        end else if (state == s_state_4) begin
+            axi_rready <= 0;
+            // start writing
+            awaddr <= {22'd0, op_b, 2'b00};
+            awvalid <= 1'b1;
+            axi_wdata <= axi_rdata;
+            wvalid <= 1'b1;
+            state <= s_state_5;
+        end else if (state == s_state_5) begin
+            if (axi_awready) begin
+                awvalid <= 0;
+            end
+            if (axi_wready) begin
+                wvalid <= 0;
+            end
+            if (axi_bvalid) begin
+                bready <= 1'b1;
+                state <= s_state_6;
+            end
+        end else if (state == s_state_6) begin
+            bready <= 0;
+            pc <= pc + 1;
+            state <= s_state_1;
         end
-      end
+    end
    end
 
 endmodule
